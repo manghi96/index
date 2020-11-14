@@ -1,0 +1,244 @@
+/* CSS Document */
+*{
+	margin: 0;
+	padding: 0;
+}
+@font-face{
+	font-family: Montserrat;
+	src: url(../font/Montserrat-ExtraBold.ttf);
+}
+/* CSS Reset */
+body{
+  	margin:0;
+  	padding:0;
+  	width:100%;
+  	height:100vh;
+  	background:white; 
+  	font-family: 'Montserrat', sans-serif;
+  	-webkit-font-smoothing: antialiased; 
+}
+
+body{
+  	-webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) 1s both;
+  	animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) 1s both;
+}
+
+@keyframes text-focus-in {
+  	0% {
+    	-webkit-filter: blur(12px);
+        filter: blur(12px);
+    	opacity: 0;
+	}
+  100% {
+    	-webkit-filter: blur(0px);
+        filter: blur(0px);
+    	opacity: 1;
+  	}
+}
+
+br::selection{
+	background:transparent;
+}
+
+.container{
+  	width:100%;
+  	height:100vh;
+}
+
+.image-box{
+  	width:100%;
+  	height:100vh;
+  	background:white;  
+  	margin:auto;
+  	display:flex;
+  	position:absolute;
+}
+
+.image-containter{
+  	margin: auto 400px;
+  	display: flex;
+  	width: 100vh;
+  	height: 75vh;
+}
+
+.image{
+  	width: 70vh;
+  	height: 75vh;
+  	background: url(../image/DSCF2187.jpg);
+  	background-size:cover;
+  	background-position: center;
+}
+ 
+.text{
+  	width:100%;
+  	height:100vh;
+  	display:flex;
+  	position: absolute;
+}
+
+.text-box{
+  	position:relative;
+  	max-width: 800px;
+  	width:100%;
+  	height: 85vh;
+/*  	margin:auto;*/
+	left: 675px;
+	top: 125px;
+}
+
+.text-box-2{
+  	float: right;
+  	width: 50%;
+  	height: 75vh;
+  	display:flex;
+  	justify-content: flex-end;
+  	flex-direction:column;
+}
+
+.text-designer{
+  	width:100%;
+}
+
+.text-designer p{
+  	line-height: 1;
+  	margin: 0;
+  	font-size: 9vh;
+  	font-weight: 700;
+	color: black;
+}
+
+.text-designer p::selection{
+  	color: transparent;
+  	-webkit-text-stroke: 2px black;
+}
+
+
+
+.text-designer-sub{
+  	display: flex;
+  	align-items: center;
+  	width: 40vh;
+  	padding-bottom: 1vh;
+  	padding-top: 1vh;
+}
+
+.text-designer-sub p{
+  	margin:0;
+  	font-size: 1.6vh;
+  	font-weight:600;
+  	color:black;
+  	text-align: left;
+  	width: 100%;
+}
+
+.text-designer-sub p::selection{
+  	color: black;
+  	background: #F44336;
+} 
+
+hr{
+  	width: 30%;
+  	margin-right: 10px;
+  	border: 1px solid #000000;
+}
+
+.text-links a{
+  	line-height: 1;
+  	margin: 0;
+  	font-size: 8vh;
+  	font-weight: 800;
+  	color: transparent;
+  	-webkit-text-stroke: 1.5px #F44336;
+  	text-decoration:none;
+  	text-transform:uppercase;
+}
+
+.text-links a:hover{
+  	color: #F44336;
+  	-webkit-text-stroke: 0px #F44336;
+}
+
+.text-links a::selection{
+  	color: transparent;
+  	-webkit-text-stroke: 1px black;
+}
+
+.manghi96{
+  	width:100%;
+  	height:20px;
+  	margin-top:30px;
+  	position:absolute;
+  	font-size:13px;
+  	font-weight:500;
+  	z-index:2; 
+}
+
+.manghi96 p{
+  	font-weight:600;
+  	margin:0;
+}
+
+.manghi96-box{
+  	width:90%;
+  	margin:auto;
+}
+
+.manghi96-2{
+  	position: absolute;
+  	height: 100vh;
+  	right: 0px;
+  	width: 35px;
+  	z-index: 1;
+}
+
+.manghi96-2-turn{
+  	width: 0px;
+  	transform: rotate(-90deg);
+  	position: absolute;
+  	bottom: 150px;
+}
+
+.manghi96-2 p{
+  	font-size: 10px;
+  	font-weight: 600;
+  	width: 400px;
+  	padding-top: 4px;
+}
+
+.mn-1{
+	width: 200px;
+  	position: absolute;
+}
+
+.mn-1 p{
+	margin: 0;
+}
+
+.mn-2{
+	width: 50px;
+	left: 300px;
+	position: absolute;
+}
+
+.mn-2 p{
+	margin: 0;
+}
+
+.manghi96 p::selection,.manghi96-2 p::selection{
+	text-decoration: none;
+}
+
+.hi-box{
+  	padding-left: 3%;
+  	padding-right: 3%;
+}
+
+.hi-box p{
+  	line-height: 0.9;
+  	font-weight:800;
+  	font-size: 4vh;
+  	color: red;
+}
+
+
+

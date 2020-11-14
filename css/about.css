@@ -1,0 +1,264 @@
+/* CSS Document */
+*{
+	margin: 0;
+	padding: 0;
+}
+@font-face{
+	font-family: Montserrat;
+	src: url(../font/Montserrat-ExtraBold.ttf);
+}
+/* CSS Reset */
+body{
+  	margin: 0;
+  	padding: 0;
+  	width: 100%;
+  	background: white; 
+  	font-family: "Poppins",sans-serif;
+  	-webkit-font-smoothing: antialiased;
+}
+
+body{
+  	-webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) 1s both;
+  	animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) 1s both;
+}
+
+br:selection{
+	background:transparent;
+}
+
+@keyframes text-focus-in {
+  	0% {
+    	-webkit-filter: blur(12px);
+        filter: blur(12px);
+    	opacity: 0;
+	}
+  100% {
+    	-webkit-filter: blur(0px);
+        filter: blur(0px);
+    	opacity: 1;
+  	}
+}
+
+/* ABOUT */
+/*menu*/
+.tab-aboutme a{
+  	cursor: pointer;
+  	color: #F44336;
+  	border-bottom: 2px #F44336 solid;
+}
+
+ .top-tab{
+/*  	display: none;*/
+  	z-index: 3;
+  	width: 100%; 
+  	margin: auto;
+  	position: fixed;
+  	display: flex;
+  	justify-content: flex-start;
+  	font-family: "Poppins",sans-serif;
+}
+
+.top-tab-box{
+  	position: relative;
+  	width: 100%;
+  	max-width: 400px;
+  	height: 25px;
+  	margin-top: 25px;
+  	display: flex; 
+  	color: black;
+  	font-size: 14px;
+  	font-weight: 500;
+  	text-transform: uppercase;
+}
+
+.tab-home,.tab-aboutme,.tab-projects,.tab-contact{
+  	text-align: center;
+  	margin-left: 15px;
+  	margin-right: 15px;
+  	height: 25px;
+  	opacity: 1;
+}
+
+.top-tab-box a{
+  	transition: 0.2s ease-in-out color;
+  	outline: none; 
+}
+
+.top-tab-box a:link{
+  	color: black;
+  	text-decoration: none;
+}
+
+.top-tab-box a:visited{
+	color: black;
+}
+
+.top-tab-box a:hover{
+  	transition: 0.2s cubic-bezier(0.22, 0.61, 0.36, 1) color;
+  	color: #F44336;
+  	border-bottom: 0px #F44336 solid;
+}
+
+.top-tab-box a:focus{
+  	color: #F44336;
+  	border-bottom: 0px #F44336 solid;
+}
+
+.top-tab-box a:active{
+	color: #F44336;
+}
+
+.tab-home a:selection,.tab-aboutme a:selection,.tab-projects a:selection,.tab-contact a:selection{
+	text-decoration: none;
+}
+
+/*menu*/
+.container{
+  	width: 85%;
+  	margin: auto;
+  	height: 100vh;
+  	display: flex;
+  	justify-content: space-between;
+}
+
+/*LEFT CONTAINER*/ 
+.container-left{
+  	width: 65%;
+  	height: 100vh;
+  	display: flex;
+  	justify-content: center;
+  	align-items: center;
+  	flex-direction: column;
+} 
+
+.container-left-1{
+  	height: 90vh;
+  	display: flex;
+  	flex-direction: column;
+  	justify-content: space-around;
+  	width: 100%;
+	position: absolute;
+	left: 13.8%;
+}
+
+.about-title{
+  	width: auto;
+  	display: flex;
+  	height: 111px;
+}
+
+.about-title p{
+/*  	margin: 0;*/
+  	font-size: 100px;
+  	font-weight: 900;
+  	margin: auto;
+  	width: 100%;
+}
+
+.about-title p:selection{
+	color: #F44336;
+	text-decoration:none;
+}
+
+.title-text{
+	color: transparent;
+	-webkit-text-stroke: 1.5px #F44336;
+}
+
+.title-text::selection{
+	color: #F44336;
+	-webkit-text-stroke: 0px;
+}
+
+.container-left-box{
+	width: auto;
+}
+
+.about{
+  	width: 85%;
+  	max-width: 550px;
+  	height: auto;
+}
+
+.about p{
+  	color: black;
+  	margin: 0px;
+  	font-weight: 500;
+  	font-size: 28px;
+}
+
+.about p:selection{
+	color: white;
+	background-color: black;
+}
+
+.text-style{
+	font-weight: 500;
+	color: #F44336;
+}
+
+.text-style:selection{
+	background-color: black;
+}
+
+.more-info{
+	max-width: 550px;
+}
+
+.more-info p{
+  	font-size: 14px;
+  	color: #A7A7A7;
+  	font-weight: 500;
+  	margin: 0px;
+  	margin-top: 4px;
+}
+
+.more-info p:selection{
+	color: white;
+	background-color: black;
+}
+
+.more-info span:selection{
+	color: white; 
+	background-color: black;
+}
+/*LEFT CONTAINER*/ 
+
+/*RIGHT CONTAINER*/ 
+.container-right{
+  	width: 52%;
+  	height: 100vh;
+  	display: flex;
+  	justify-content: center;
+  	align-items: center;
+  	flex-direction: column;
+}
+
+.box-image{
+  	width: 100%;
+  	height: 75vh;
+  	position: relative;
+  	display: flex;
+  	justify-content: center;
+  	align-items: center;
+  	flex-direction: column;
+	left: -10%;
+}
+ 
+.image{
+  	width: 100%;
+  	height: 100vh;
+  	background: url(../image/Artboard2.jpg);
+  	background-size: cover;
+/*  	background-position: center;*/
+  	background-repeat: no-repeat;
+  	background-position: left;
+  	z-index: -1;
+}
+/*RIGHT CONTAINER*/ 
+
+
+
+
+
+
